@@ -51,15 +51,15 @@ export default function Page() {
 
       {/* Floating snowflakes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(50)].map((_, i) => (
+        {[...Array(200)].map((_, i) => (
           <Snowflake
             key={i}
             className="text-white/30 absolute animate-float"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
+              left: `${Math.random() * 100}vw`,
+              top: `-10vh`,
               transform: `scale(${0.5 + Math.random() * 0.5})`,
+              animationDelay: `${Math.random() * 5}s`,
             }}
           />
         ))}

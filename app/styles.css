@@ -27,6 +27,7 @@
   border-radius: 50%;
   filter: blur(1px);
   animation: snowfall linear infinite;
+  animation-duration: 0s;
 }
 
 @keyframes pulse {
@@ -44,7 +45,7 @@
 
 @keyframes float {
   0% {
-    transform: translateY(-50vh) rotate(0deg);
+    transform: translateY(-10vh) rotate(0deg);
     opacity: 0;
   }
   50% {
@@ -52,12 +53,12 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(50vh) rotate(360deg);
+    transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
 }
 
 .animate-float {
-  animation: float 3s linear infinite;
+  animation: float 5s linear infinite;
 }
 
